@@ -145,7 +145,6 @@ section, footer{
     flex-direction: row-reverse;
 }
 
-
 .povolenka{
     width: 300px;
     height: 300px;
@@ -160,6 +159,9 @@ section, footer{
     display: flex;
     gap: 100px;
     justify-content: center;
+}
+.image_small{
+    visibility:hidden;
 }
 
 
