@@ -1,24 +1,21 @@
-### Node ###
-node_modules/
+# Dependencies
+/node_modules
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/settings.json
-!.vscode/extensions.json
-*.code-workspace
+# Misc
+/public
+
+# Intellij
+/.idea
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Visual Studio Code
+/.vscode
 .history
-.ionide
 
-### macOS ###
-.DS_Store
-.AppleDouble
-.LSOverride
-
-### Windows ###
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-[Dd]esktop.ini
+gh-pages
+gh-pages.pub
