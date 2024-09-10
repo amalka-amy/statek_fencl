@@ -162,11 +162,6 @@ section, footer{
     justify-content: center;
 }
 
-.image_small{
-    visibility: hidden;
-}
-
-
 
 @media screen and (max-width:1100px){
     body{
