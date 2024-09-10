@@ -19,14 +19,12 @@
             <a class="button" href="index/#uvod">STATEK FENCL</a>
     
         </div>
-
         <ul class="menu" id="menu">
             <li class="button"><a class="button__link" href="#o_nas">O Nás</a></li>
             <li class="button"><a class="button__link" href="#povolenky">Povolenky</a></li>
             <li class="button"><a class="button__link" href="#rybarsky_rad">Rybářský řád</a></li>
             <li class="button"><a class="button__link" href="#kontakty">Kontakty</a></li>
         </ul>
-
         <button class="menu-toggle" id="menu-toggle">☰</button>
     </header>
     
@@ -114,8 +112,25 @@
         var header = document.querySelector('header');
         header.classList.toggle('higher');
         menu.classList.toggle('active');
-        console.log("done");
     });
+
+    var buttons = document.querySelectorAll('.button__link');
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            var header = document.querySelector('header');
+            
+            // Toggle the 'higher' class on the header
+            header.classList.toggle('higher');
+            
+            // Toggle the 'active' class on the menu
+            menu.classList.toggle('active');
+            
+            console.log('done');
+        });
+    });
+
 </script>
 </body>
 </html>
