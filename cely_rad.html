@@ -30,59 +30,24 @@
     
     <main >
         <div class="main">
-    
-            <section id="uvod">
-                    <img src="images/title_image.jpg" alt="Statek Fencl">
-            </section>
         
-            <section id="o_nas">
-                    <h2>O Nás</h2>
-                    <div class="o_nas__center">
-                        <img src="images/image_o_nas.jpg" class="image_small" alt="Logo Statek Fencl">
-                        <div class="o_nas__center-right">
+            <section id="rad_cely">
+                    <h2>Celý řád</h2>
+                    <div class="o_nas_cely__center text_center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</p>
-                        <p><a class="button_small" href="o_nas.html">Ještě více o nás</a></p>
+
+
+                        <!-- kod dole použij pro odrážkový seznam jestli budeš potřebovat :) -->
+                        <div class="text_center">
+                            <ul>
+                                <!-- značka <li></li> je jedna tečka, co napíšeš mezi ty tagy, tak to se zobrazí, ale to ti asi už došlo :D  -->
+                                <li>Ahoj</li>
+                                <li>sem napiš co chceš aby bylo vidět</li>
+                            </ul>
                         </div>
+                        
                     </div>
             </section>
-            <section id="povolenky">
-                <h2>Povolenky</h2>
-                <div class="povolenky">
-                    <div class="povolenka">
-                        <h3>POVOLENKA <br> DENNÍ</h3>
-                        <p>CENA:2700Kč</p>
-                        <h4>MAJITEL POVOLENKY SI SMÍ PONECHAT:</h4>
-                        <ul>
-                            <li>1ks vyjmenovéané ryby týdně</li>
-                            <li>3 ks lána týdně</li>
-                            <li>2 kg bílé ryby bez stanovení délky denně</li>
-                        </ul>
-                    </div>
-                     <div class="povolenka">
-                        <h3>POVOLENKA <br> TŘÍDENNÍ</h3>
-                        <p>CENA:2700Kč</p>
-                        <h4>MAJITEL POVOLENKY SI SMÍ PONECHAT:</h4>
-                        <ul>
-                            <li>1ks vyjmenovéané ryby týdně</li>
-                            <li>3 ks lána týdně</li>
-                            <li>2 kg bílé ryby bez stanovení délky denně</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="rybarsky_rad">
-                
-                <h2>Rybářský řád</h2>
-                <div class="rybarsky_rad__center">
-                    <div class="rybarsky_rad__center-left">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</p>
-                        <p><a class="button_small" href="cely_rad.html">Celý řád</a></p>
-                    </div>
-                    <img src="images/image_rad.jpg" class="image_small" alt="Logo Statek Fencl">
-                </div>
-            </section>
-        
-        </div>
     </main>
         
     <footer class="footer" id="kontakty">
@@ -119,11 +84,9 @@
     buttons.forEach(function(button) {
         button.addEventListener('click', function () {
             var menu = document.getElementById('menu');
-            var header = document.querySelector('header');
-            
+            var header = document.querySelector('header');       
             
             header.classList.toggle('higher');
-            
             
             menu.classList.toggle('active');
             
