@@ -25,7 +25,7 @@
             <li class="button"><a class="button__link" href="index.html#rybarsky_rad">Rybářský řád</a></li>
             <li class="button"><a class="button__link" href="index.html#kontakty">Kontakty</a></li>
         </ul>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menu" aria-controls="menu" aria-expanded="false">☰</button>
     </header>
     
     <main >
@@ -72,28 +72,21 @@
 
     
 <script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-        var menu = document.getElementById('menu');
-        var header = document.querySelector('header');
-        header.classList.toggle('higher');
-        menu.classList.toggle('active');
+    var menu = document.getElementById('menu');
+    var toggle = document.getElementById('menu-toggle');
+
+    toggle.addEventListener('click', function () {
+        var open = menu.classList.toggle('active');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
 
-    var buttons = document.querySelectorAll('.button__link');
-
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function () {
-            var menu = document.getElementById('menu');
-            var header = document.querySelector('header');       
-            
-            header.classList.toggle('higher');
-            
-            menu.classList.toggle('active');
-            
-            console.log('done');
+    // po kliknutí na odkaz se menu zavře
+    document.querySelectorAll('.button__link').forEach(function (link) {
+        link.addEventListener('click', function () {
+            menu.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
         });
     });
-
 </script>
 </body>
 </html>
